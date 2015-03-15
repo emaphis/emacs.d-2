@@ -29,3 +29,7 @@
 
 ;; erlang
 (load "set-erlang.el")
+
+
+;; lisp
+(setq inferior-lisp-program "sbcl")
