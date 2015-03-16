@@ -27,7 +27,8 @@
     company
     flycheck
     magit
-    paredit
+;;;    paredit
+    smartparens
     rainbow-delimiters
 
     ;; erlang
