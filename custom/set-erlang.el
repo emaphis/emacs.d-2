@@ -5,6 +5,8 @@
 ;; some hints from Alex Ott:
 ;; http://alexott.net/en/writings/emacs-devenv/EmacsErlang.html
 
+;;; Code:
+
 (setq load-path (cons  "C:\\erl6.3\\lib\\tools-2.7.1\\emacs"
                        load-path))
 (setq erlang-root-dir "C:\\erl6.3")
@@ -22,7 +24,9 @@
 ;; Some Erlang customizations
 (add-hook 'erlang-mode-hook 'my-erlang-mode-hook)
 
+(add-hook 'erlang-mode-hook #'paredit-mode)
+
 (provide 'set-erlang)
-;; set-erlang.el ends here
+;;; set-erlang.el ends here
 
 
