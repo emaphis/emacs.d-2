@@ -1,6 +1,8 @@
-;; set-programming.el
-;; provides programming customisations
+;; set-programming -- provides programming customisations
 ;; Copyright © 2015 Ed Maphis
+
+;;; Commentary:
+;;  an emacs setup based on clojure example.
 
 ;;; Code:
 
@@ -22,6 +24,14 @@
 
 ;; rainbow delimiters
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
+;; hl-sexp
+;(require-package 'hl-sexp)
+
+(require 'hl-sexp)
+(add-hook 'lisp-mode-hook #'hl-sexp-mode)
+(add-hook 'emacs-lisp-mode-hook #'hl-sexp-mode)
+
 
 (provide 'set-programming)
 ;;; set-programming ends here

@@ -33,10 +33,9 @@
     ;; erlang
     ; erlang
 
-;; - hl-sexp
- ;; - paredit
- ;; - clojure-mode
- ;; - cider
+    hl-sexp
+    clojure-mode
+    cider
 
  ;; - flycheck-clojure
  ;; - clj-refactor (not from stable!)
@@ -53,6 +52,8 @@
 ;; erlang
 (load "set-erlang.el")
 
+;; clojure
+(load "set-clojure.el")
 
 ;; lisp
 (setq inferior-lisp-program "sbcl")
