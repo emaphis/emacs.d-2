@@ -1,6 +1,7 @@
-;; set-erlang.el
-;; provides erlang customizations
+;;; set-erlang -- provides erlang customizations
 ;; Copyright © 2015 Ed Maphis
+
+;;; Commentary:
 
 ;; some hints from Alex Ott:
 ;; http://alexott.net/en/writings/emacs-devenv/EmacsErlang.html
@@ -24,7 +25,7 @@
 ;; Some Erlang customizations
 (add-hook 'erlang-mode-hook 'my-erlang-mode-hook)
 
-(add-hook 'erlang-mode-hook #'paredit-mode)
+;;(add-hook 'erlang-mode-hook #'paredit-mode)
 
 (provide 'set-erlang)
 ;;; set-erlang.el ends here

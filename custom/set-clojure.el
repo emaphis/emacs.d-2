@@ -41,11 +41,20 @@
 (add-hook 'cider-mode-hook #'company-mode)
 
 ;; paredit
-(add-hook 'clojure-mode-hook #'paredit-mode)
-(add-hook 'cider-repl-mode-hook #'paredit-mode)
+;;(add-hook 'clojure-mode-hook #'paredit-mode)
+;;(add-hook 'cider-repl-mode-hook #'paredit-mode)
 
 ;; hl-sexp
 (add-hook 'clojure-mode-hook #'hl-sexp-mode)
+
+;; flycheck for clojure
+(require 'flycheck-clojure)
+(eval-after-load 'flycheck '(flycheck-clojure-setup))
+
+;; clojure refactor
+;;(require 'multiple-cursors)
+;;(require 'dash)
+;;(require 'clj-refactor)
 
 (provide 'set-clojure)
 ;;; set-clojure.el ends here

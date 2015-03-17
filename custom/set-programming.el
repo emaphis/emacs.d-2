@@ -16,7 +16,7 @@
 ;; smartparens
 (require 'smartparens-config)
 (sp-use-smartparens-bindings)
-(smartparens-global-mode t) 
+(smartparens-global-mode t)
 (show-smartparens-global-mode t) ; highlights matching pairs
 (sp-pair "(" ")" :wrap "M-(")
 (sp-pair "[" "]" :wrap "M-[")
@@ -25,7 +25,6 @@
 
 ;; flycheck
 (require 'flycheck)
-
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; company

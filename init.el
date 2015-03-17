@@ -1,4 +1,6 @@
-;;; emacs initialization file
+;;; init -- emacs initialization file
+
+;;; Commentary:
 
 ;;; Code:
 (add-to-list 'load-path "~/.emacs.d/custom")
@@ -24,22 +26,24 @@
 
 (defvar my-packages
   '(
+    dash
+;;    s
     company
     flycheck
     magit
 ;;;    paredit
     smartparens
     rainbow-delimiters
-
+    s
     ;; erlang
     ; erlang
 
     hl-sexp
     clojure-mode
     cider
+    flycheck-clojure
+    clj-refactor
 
- ;; - flycheck-clojure
- ;; - clj-refactor (not from stable!)
     ) "Packages managed as elpa repositories.")
 
 (dolist (p my-packages)
