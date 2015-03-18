@@ -30,6 +30,8 @@
 ;; company
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
+(eval-after-load 'flycheck
+  '(setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
 
 ;; rainbow delimiters
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
