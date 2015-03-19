@@ -56,5 +56,61 @@
 ;;(require 'dash)
 ;;(require 'clj-refactor)
 
+;;; midje stuff
+;;; A function for creating midje facts from cider repl output:
+;;  brittle: it requires that the cider-repl-result-prefix be set to "=>"
+;;           and that the clojure buffer is before the repl in window order.
+(defun cem-extract-midje-fact ()
+  "Extract the repl output  and generate a midje fact."
+  (interactive)
+  (let (pt1 pt1 my-str)
+    (setq pt1 (point))
+    (search-forward "=>")
+    (end-of-line)
+    (setq pt2 (point))
+    (setq my-str (buffer-substring pt1 pt2))
+    (other-window -1)
+    (insert (concat  "(fact "  my-str ")"))
+    (newline)
+    (previous-line)
+    (tab-indent-or-complete)
+    (next-line)
+    (move-beginning-of-line 1)
+    (tab-indent-or-complete)
+    (other-window +1)
+    (next-line)))
+
+(add-hook 'cider-repl-mode-hook
+          (lambda ()
+            (define-key cider-repl-mode-map
+              (kbd "C-c a") 'cem-extract-midje-fact)))
+
+(eval-after-load 'clojure-mode
+  '(define-clojure-indent
+     (fact 'defun)
+     (facts 'defun)
+     (against-background 'defun)
+     (provided 0)))
+
+(add-hook 'clojure-mode-hook 'midje-colorize)
+(defun midje-colorize ()
+  (flet ((f (keywords face)
+            (cons (concat "\\<\\("
+                          (mapconcat 'symbol-name keywords "\\|")
+                          "\\)\\>")
+                  face)))
+    (font-lock-add-keywords
+     nil
+     (list (f '(fact facts future-fact future-facts tabular provided)
+              'font-lock-keyword-face)
+           (f '(just contains has has-suffix has-prefix
+                     truthy falsey anything exactly roughly throws)
+              'font-lock-type-face)
+           '("=>\\|=not=>" . font-lock-negation-char-face) ; arrows
+           '("\\<\\.+[a-zA-z]+\\.+\\>" . 'font-lock-type-face))))) ; metaconstants
+
+;; outputs value of sexp in the edit buffer
+(global-set-key (kbd "M-p") 'cider-eval-print-last-sexp)
+
 (provide 'set-clojure)
 ;;; set-clojure.el ends here
