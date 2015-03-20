@@ -86,6 +86,10 @@
 ;; set aspell
 (setq-default ispell-program-name "aspell")
 
+;;; display column number in mode-line
+(column-number-mode t)
+
+
 (provide 'init)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; init.el ends here
