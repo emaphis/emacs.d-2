@@ -61,8 +61,15 @@
 ;; clojure
 (load "set-clojure.el")
 
-;; lisp
+;; allegro CL
+;;(load "set-allegro.el")
+
+;; lisp  with slime
+(load (expand-file-name "~/quicklisp/slime-helper.el"))
+;; Replace "sbcl" with the path to your implementation
 (setq inferior-lisp-program "sbcl")
+(slime-setup '(slime-company))
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; some global key settings
