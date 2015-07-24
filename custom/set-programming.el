@@ -34,7 +34,7 @@
   '(setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
 
 ;; rainbow delimiters
-(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+;(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
 ;; hl-sexp
 (require 'hl-sexp)
