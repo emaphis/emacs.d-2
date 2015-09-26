@@ -32,6 +32,7 @@
     flycheck
     flycheck-pos-tip
     magit
+    smex
 ;;;    paredit
     smartparens
     rainbow-delimiters
@@ -46,6 +47,11 @@
     clj-refactor
 
     sml-mode
+
+    ;; haskell
+    haskell-mode
+    hi2
+;;    haskell-flycheck
 
     ) "Packages managed as elpa repositories.")
 
@@ -62,6 +68,9 @@
 
 ;; clojure
 (load "set-clojure.el")
+
+;; haskell
+(load "set-haskell.el")
 
 ;; allegro CL
 ;;(load "set-allegro.el")
