@@ -8,10 +8,10 @@
 
 ;;; Code:
 
-(setq load-path (cons  "C:\\erl6.3\\lib\\tools-2.7.1\\emacs"
+(setq load-path (cons  "C:\\erl7.1\\lib\\tools-2.8.1\\emacs"
                        load-path))
-(setq erlang-root-dir "C:\\erl6.3")
-(setq exec-path (cons "C:\\erl6.3\bin" exec-path))
+(setq erlang-root-dir "C:\\erl7.1")
+(setq exec-path (cons "C:\\erl7.1\bin" exec-path))
 (require 'erlang-start)
 
 (defun my-erlang-mode-hook ()
