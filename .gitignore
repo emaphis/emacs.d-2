@@ -9,6 +9,7 @@ tramp
 .\#*
 places
 cider-history
+ac-comphist.dat
 
 # Org-mode
 .org-id-locations

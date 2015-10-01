@@ -53,6 +53,8 @@
     hi2
 ;;    haskell-flycheck
 
+    ;; fsharp
+    fsharp-mode
     ) "Packages managed as elpa repositories.")
 
 (dolist (p my-packages)
@@ -71,6 +73,9 @@
 
 ;; haskell
 (load "set-haskell.el")
+
+;; fsharp
+(load "set-fsharp.el")
 
 ;; allegro CL
 ;;(load "set-allegro.el")
