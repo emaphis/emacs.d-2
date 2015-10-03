@@ -52,6 +52,8 @@
     haskell-mode
     hi2
 ;;    haskell-flycheck
+    ghc
+    company-ghc
 
     ;; fsharp
     fsharp-mode

@@ -45,7 +45,14 @@
 
 
 (custom-set-variables
-  '(haskell-process-type 'stack-ghci))
+ '(haskell-process-type 'stack-ghci))
+
+;; ghc-mod stuff
+(autoload 'ghc-init "ghc" nil t)
+(autoload 'ghc-debug "ghc" nil t)
+(add-hook 'haskell-mode-hook (lambda () (ghc-init)))
+
+(add-to-list 'company-backends 'company-ghc)
 
 (provide 'set-hsekll)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
