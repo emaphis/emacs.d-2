@@ -22,6 +22,12 @@
 (add-hook 'haskell-mode-hook 'haskell-auto-insert-module-template)
 
 
+;;(add-hook 'haskell-mode-hook 'my-haskell-hook)
+
+;;(defun my-haskell-hook ()
+;;  (flycheck-mode -1) )
+
+
 ;; haskell interactive suttings
 (require 'haskell-interactive-mode)
 (require 'haskell-process)
@@ -44,16 +50,20 @@
 (define-key haskell-mode-map [f8] 'haskell-navigate-imports)
 
 
+;;(custom-set-variables
+;; '(haskell-process-type 'stack-ghci))
+
 (custom-set-variables
- '(haskell-process-type 'stack-ghci))
+ '(haskell-process-type 'ghci))
+
 
 ;; ghc-mod stuff
-(autoload 'ghc-init "ghc" nil t)
-(autoload 'ghc-debug "ghc" nil t)
-(add-hook 'haskell-mode-hook (lambda () (ghc-init)))
+;(autoload 'ghc-init "ghc" nil t)
+;(autoload 'ghc-debug "ghc" nil t)
+;(add-hook 'haskell-mode-hook (lambda () (ghc-init)))
 
-(add-to-list 'company-backends 'company-ghc)
+;(add-to-list 'company-backends 'company-ghc)
 
-(provide 'set-hsekll)
+(provide 'set-haskell)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; set-haskell.el ends here

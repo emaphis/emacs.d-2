@@ -52,11 +52,14 @@
     haskell-mode
     hi2
 ;;    haskell-flycheck
-    ghc
-    company-ghc
+;;    ghc
+;;    company-ghc
 
     ;; fsharp
     fsharp-mode
+
+    ;; Ocaml
+    tuareg
     ) "Packages managed as elpa repositories.")
 
 (dolist (p my-packages)
