@@ -22,10 +22,11 @@
 (add-hook 'haskell-mode-hook 'haskell-auto-insert-module-template)
 
 
-;;(add-hook 'haskell-mode-hook 'my-haskell-hook)
+(add-hook 'haskell-mode-hook 'my-haskell-hook)
 
-;;(defun my-haskell-hook ()
-;;  (flycheck-mode -1) )
+(defun my-haskell-hook ()
+  (flycheck-mode -1)
+  "This is my haskell mode hook")
 
 
 ;; haskell interactive suttings

@@ -60,6 +60,9 @@
 
     ;; Ocaml
     tuareg
+
+    ;; Scala
+    ensime
     ) "Packages managed as elpa repositories.")
 
 (dolist (p my-packages)
@@ -81,6 +84,10 @@
 
 ;; fsharp
 (load "set-fsharp.el")
+
+;; Scala
+(require 'ensime)
+(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 
 ;; allegro CL
 ;;(load "set-allegro.el")
