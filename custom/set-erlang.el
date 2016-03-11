@@ -1,5 +1,5 @@
 ;;; set-erlang -- provides erlang customizations
-;; Copyright © 2015 Ed Maphis
+;; Copyright © 2016 Ed Maphis
 
 ;;; Commentary:
 
@@ -8,10 +8,10 @@
 
 ;;; Code:
 
-(setq load-path (cons  "C:\\erl7.1\\lib\\tools-2.8.1\\emacs"
+(setq load-path (cons  "C:\\erl7.2.1\\lib\\tools-2.8.2\\emacs"
                        load-path))
-(setq erlang-root-dir "C:\\erl7.1")
-(setq exec-path (cons "C:\\erl7.1\bin" exec-path))
+(setq erlang-root-dir "C:\\erl7.2.1")
+(setq exec-path (cons "C:\\erl7.2.1\bin" exec-path))
 (require 'erlang-start)
 
 (defun my-erlang-mode-hook ()
