@@ -1,8 +1,8 @@
 ;; set-programming -- provides programming customisations
-;; Copyright © 2015 Ed Maphis
+;; Copyright © 2016 Ed Maphis
 
 ;;; Commentary:
-;;  an emacs setup based on clojure example.
+;;  an Emacs setup based on clojure example.
 
 ;;; Code:
 
@@ -27,14 +27,13 @@
 (require 'flycheck)
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
+(with-eval-after-load 'flycheck
+  (flycheck-pos-tip-mode))
+
 ;; company
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
-(eval-after-load 'flycheck
-  '(setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
 
-;; rainbow delimiters
-;(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
 ;; hl-sexp
 (require 'hl-sexp)
