@@ -1,4 +1,5 @@
 ;;; init -- haskell initialization file
+;; Copyright © 2016 Ed Maphis
 
 ;;; Commentary:
 ;; init file for haskell probramming
@@ -16,8 +17,6 @@
 
 ;; (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 
-(require 'hi2)
-(add-hook 'haskell-mode-hook 'turn-on-hi2)
 
 (add-hook 'haskell-mode-hook 'haskell-auto-insert-module-template)
 
@@ -25,7 +24,7 @@
 (add-hook 'haskell-mode-hook 'my-haskell-hook)
 
 (defun my-haskell-hook ()
-  (flycheck-mode -1)
+  (flycheck-mode 1)
   "This is my haskell mode hook")
 
 
