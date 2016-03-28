@@ -129,9 +129,14 @@
 (column-number-mode t)
 
 
+;;; Keep emacs custom-settings in separate file
+(setq custom-file "~/.emacs.d/custom/set-custom.el")
+(load custom-file)
+
 (provide 'init)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; init.el ends here
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
