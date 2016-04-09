@@ -37,7 +37,7 @@
 ;;;    paredit
     smartparens
     rainbow-delimiters
-    s
+
     ;; erlang
     ; erlang
 
@@ -63,6 +63,10 @@
 
     ;; Scala
     ensime
+
+    ;; R programming
+    ess
+
     ) "Packages managed as elpa repositories.")
 
 (dolist (p my-packages)
@@ -102,6 +106,9 @@
 ;; Python
 ;;(elpy-enable)
 
+
+;; R
+(require 'ess-site)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; some global key settings

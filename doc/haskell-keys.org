@@ -1,0 +1,80 @@
+Keyboard combinations for Haskell
+
+* Haskell Mode
+
+** Custom
+
+C-c C-l   haskell-process-load-or-reload
+C-`       haskell-interactive-bring
+C-c C-t   haskell-process-do-type
+C-c C-i   haskell-process-do-info
+C-c C-c   haskell-process-cabal-build
+C-c C-k   haskell-interactive-mode-clear
+C-c c     haskell-process-cabal
+[f8]      haskell-navigate-imports
+
+
+** Haskell
+C-c C-r haskell-process-reload
+C-c C-t haskell-process-do-type
+C-c C-i haskell-process-do-info
+
+
+** Haskell Mode
+C-c C-.   haskell-mode-format-imports
+remap delete-indentation 'haskell-delete-indentation
+C-c C-l   haskell-mode-enable-process-minor-mode
+
+
+** Highlight Uses
+TAB       highlight-uses-mode-next
+S-TAB     highlight-uses-mode-prev
+<backtab> highlight-uses-mode-prev
+
+** Haskell Interactive Mode
+RET       haskell-interactive-mode-return
+SPC        haskell-interactive-mode-space
+C-j        haskell-interactive-mode-newline-indent
+
+** Haskell Move Nested
+;; C-,     haskell-move-nested-left
+;; C-.     haskell-move-nested-right
+
+** Haskell Presentation Mode
+q          quit-window
+c          haskell-presentation-clear
+
+** Haskell Menu
+n          next-line
+p          previous-line
+RET        haskell-menu-mode-ret
+
+** Inf Haskell
+;;M-C-x    inferior-haskell-send-defun
+;;C-x C-e  inferior-haskell-send-last-sexp
+;;C-c C-r  inferior-haskell-send-region
+
+** Hakell Debug
+g          haskell-debug/refresh
+s          haskell-debug/step
+t          haskell-debug/trace
+
+** Haskell Cabal
+C-c C-s    haskell-cabal-subsection-arrange-lines
+C-M-n      haskell-cabal-next-section
+
+** GHCI Script Mode
+C-c C-l    ghci-script-mode-load
+
+
+** Navigate Imports
+;; <f8>    haskell-navigate-imports
+
+
+** Haskell Indent
+C-c C-=    haskell-indent-insert-equal
+C-c C-|    haskell-indent-insert-guard
+
+** Haskell Indentation
+RET        haskell-indentation-newline-and-indent
+<backtab>  haskell-indentation-indent-backwards

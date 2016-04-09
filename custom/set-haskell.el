@@ -11,6 +11,9 @@
 ;; M-x haskell-process-restart
 ;;   Dump the  haskell-process  state:
 ;; M-: (haskell-process)
+;;   Cancel a running REPL command
+;; C-c C-c
+;;   Clear the REPL
 
 ;;; Code:
 
@@ -52,8 +55,8 @@
 ;;(custom-set-variables
 ;; '(haskell-process-type 'stack-ghci))
 
-(custom-set-variables
- '(haskell-process-type 'ghci))
+;;(custom-set-variables
+;; '(haskell-process-type 'ghci))
 
 
 ;; ghc-mod stuff
