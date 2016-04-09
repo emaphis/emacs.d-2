@@ -37,6 +37,7 @@
 ;;;    paredit
     smartparens
     rainbow-delimiters
+    markdown-mode
 
     ;; erlang
     ; erlang
