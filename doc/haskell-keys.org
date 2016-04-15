@@ -67,10 +67,6 @@ C-M-n      haskell-cabal-next-section
 C-c C-l    ghci-script-mode-load
 
 
-** Navigate Imports
-;; <f8>    haskell-navigate-imports
-
-
 ** Haskell Indent
 C-c C-=    haskell-indent-insert-equal
 C-c C-|    haskell-indent-insert-guard

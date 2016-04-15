@@ -52,8 +52,8 @@
 (define-key haskell-mode-map [f8] 'haskell-navigate-imports)
 
 
-;;(custom-set-variables
-;; '(haskell-process-type 'stack-ghci))
+(custom-set-variables
+ '(haskell-process-type 'stack-ghci))
 
 ;;(custom-set-variables
 ;; '(haskell-process-type 'ghci))

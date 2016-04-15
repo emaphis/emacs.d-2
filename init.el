@@ -66,7 +66,7 @@
     ensime
 
     ;; R programming
-    ess
+   ;; ess
 
     ) "Packages managed as elpa repositories.")
 
