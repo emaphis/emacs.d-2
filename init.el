@@ -88,20 +88,20 @@
 (load "set-haskell.el")
 
 ;; fsharp
-(load "set-fsharp.el")
+;(load "set-fsharp.el")
 
 ;; Scala
-(require 'ensime)
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
+;(require 'ensime)
+;(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 
 ;; allegro CL
 ;;(load "set-allegro.el")
 
 ;; lisp  with slime
-(load (expand-file-name "~/quicklisp/slime-helper.el"))
+;(load (expand-file-name "~/quicklisp/slime-helper.el"))
 ;; Replace "sbcl" with the path to your implementation
-(setq inferior-lisp-program "sbcl")
-(slime-setup '(slime-company))
+;(setq inferior-lisp-program "sbcl")
+;(slime-setup '(slime-company))
 
 
 ;; Python
@@ -109,7 +109,7 @@
 
 
 ;; R
-(require 'ess-site)
+;(require 'ess-site)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; some global key settings
