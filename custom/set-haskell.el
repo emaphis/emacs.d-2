@@ -30,6 +30,8 @@
   (flycheck-mode 1)
   "This is my haskell mode hook")
 
+;;(add-hook 'flycheck-mode-hook #'flycheck-haskell-setup)
+
 
 ;; haskell interactive suttings
 (require 'haskell-interactive-mode)

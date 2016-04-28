@@ -52,7 +52,7 @@
 
     ;; haskell
     haskell-mode
-;;    haskell-flycheck
+;;    flycheck-haskell
 ;;    ghc
 ;;    company-ghc
 
