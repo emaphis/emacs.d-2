@@ -43,12 +43,12 @@
     ; erlang
 
     hl-sexp
-    clojure-mode
-    cider
-    flycheck-clojure
-    clj-refactor
+;;    clojure-mode
+;;    cider
+;;    flycheck-clojure
+;;    clj-refactor
 
-    sml-mode
+;;    sml-mode
 
     ;; haskell
     haskell-mode
@@ -57,13 +57,13 @@
 ;;    company-ghc
 
     ;; fsharp
-    fsharp-mode
+;;    fsharp-mode
 
     ;; Ocaml
-    tuareg
+;;    tuareg
 
     ;; Scala
-    ensime
+;;    ensime
 
     ;; R programming
    ;; ess
@@ -79,10 +79,10 @@
 (load "set-programming.el")
 
 ;; erlang
-(load "set-erlang.el")
+;;(load "set-erlang.el")
 
 ;; clojure
-(load "set-clojure.el")
+;;(load "set-clojure.el")
 
 ;; haskell
 (load "set-haskell.el")
